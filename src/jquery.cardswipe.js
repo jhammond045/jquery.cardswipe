@@ -547,7 +547,12 @@
 
 		enable: function () {
 			bindListener();
+		},
+		
+		parse: function (rawData) {
+			return parseData(rawData);
 		}
+			
 	};
 
 	// The Luhn checksum function is available to the client if needed.
